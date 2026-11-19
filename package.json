@@ -1,0 +1,23 @@
+{
+  "name": "chat-sockets-av3",
+  "version": "1.0.0",
+  "description": "Chat estilo WhatsApp com sockets: ponto a ponto em TCP direto e grupo em UDP via servidor (Av3 Redes - IFRS)",
+  "private": true,
+  "main": "servidor.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "servidor": "node servidor.js",
+    "ana": "node cliente.js Ana 5001 6001 -v",
+    "bruno": "node cliente.js Bruno 5002 6002 -v",
+    "carlos": "node cliente.js Carlos 5003 6003",
+    "derrubar-bruno": "pkill -9 -f 'cliente.js Brun[o]'",
+    "limpar-logs": "node -e \"require('fs').rmSync('logs',{recursive:true,force:true})\""
+  },
+  "dependencies": {
+    "boxen": "5.1.2",
+    "chalk": "4.1.2",
+    "cli-table3": "0.6.5"
+  }
+}

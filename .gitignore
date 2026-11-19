@@ -1,0 +1,20 @@
+# Dependências e logs Node.js
+node_modules/
+npm-debug.log*
+*.log
+
+# Variáveis de ambiente
+.env
+.env.*
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+
+
+# Logs gerados pelo chat
+logs/
